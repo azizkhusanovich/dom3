@@ -1,0 +1,91 @@
+.our-strengths {
+  transform: translateY(-108px);
+}
+
+.our-strengths__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.our-strengths__card {
+  padding: 30px;
+  padding-top: 48px;
+  background: var(--white);
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  width: 31%;
+  text-align: center;
+}
+
+.our-strengths__img {
+  width: 87px;
+}
+
+.our-strengths__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: var(--light-black);
+  margin: 4px 0 20px;
+}
+
+.our-strengths__span {
+  color: var(--brown);
+}
+
+.our-strengths__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--gray);
+}
+
+@media (max-width: 1100px) {
+  .our-strengths__card {
+    padding: 20px;
+    width: 32%;
+  }
+  .our-strengths__title {
+    font-size: 24px;
+  }
+  .our-strengths__text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 860px) {
+  .our-strengths__wrapper {
+    gap: 30px;
+  }
+
+  .our-strengths__card {
+    width: 45%;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .our-strengths {
+    transform: translateY(-90px);
+  }
+
+  .our-strengths__wrapper {
+    gap: 20px;
+  }
+
+  .our-strengths__card {
+    width: 100%;
+  }
+
+  .our-strengths__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .our-strengths__text {
+    font-size: 20px;
+  }
+}

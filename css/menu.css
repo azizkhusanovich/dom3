@@ -1,0 +1,142 @@
+.menu {
+  background: url("../images/jpg/bar.jpg") no-repeat center / cover;
+}
+
+.menu__title {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  color: var(--white);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding-top: 100px;
+}
+
+.menu__wrapper {
+  padding: 138px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.m-card {
+  background: var(--white);
+  width: 30%;
+  padding: 80px 63px 30px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.m-card__recommend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--dark-orange);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  padding: 12px;
+}
+
+.m-card__img {
+  position: relative;
+}
+
+.m-card__img > img {
+  width: 100%;
+}
+
+.m-card__price-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #d67e34;
+  border: 7px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-card__price {
+  font-family: "Cookie";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.m-card__title {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+  margin: 22px 0 17px;
+  text-align: center;
+}
+
+.m-card__desription {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.m-card__btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  padding: 14px 0;
+  background: #d67e34;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  margin: 20px auto 0;
+  width: 80%;
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .m-card {
+    padding: 70px 30px 30px;
+  }
+  .m-card__price-box {
+    width: 80px;
+    height: 80px;
+    border-width: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu__wrapper {
+    padding: 80px 0;
+  }
+  .m-card:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .m-card:nth-child(2) {
+    display: none;
+  }
+  .m-card {
+    padding: 70px 50px 30px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
